@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset = utf-8">
+  <title>버팔에게</title>
+ </head>
+ <body>
+    <h1>버팔이를 응원하기 위한 페이지</h1>
+
+    <button id = "zoro1">누르시긔연</button>
+
+    
+    <div>
+        <img id = "zoroImage" src="" >
+        <br>
+        <h1 id = "zoroMessage" hidden>조로가 응원합니다^^</h1>
+        <button id = "nextButton" hidden>뻥이고진짜응원의말</button>
+    </div>
+    
+    <div id = "realCheerMessage" hidden>
+        <h3>버팔가가 어떤 컴피터를 만지고있는것을 보니 처음에 지발가도 진짜 조낸 어려워서</h3>
+        <h3>어 꺼져 안해 이랬던 기억이 새록새록 나는데... 첨엔 어려운거 당연하고 </h3>
+        <h3>있는 컴찔이인간들도 좃같고 어 ㅗ먹어 라고 고통받았더라죠ㅎㅎ</h3>
+        <h3>당연히 어려운거 맞고 존나 개소리하는것도 맞는데 항상 열심히 하는 버팔가 보면</h3>
+        <h3>지발가 앙 하고 감동받아서 움 너무너무 대단하다 이걸 말해주고싶었깅ㅎㅎ</h3>
+        <h5>참고로 CSS 존나못해서 안넣음 이건 진짜 시바 인간의영역이아님 이걸 하는 버팔 정말 대단다 이렇게 생각</h5>
+        <h5>소스코드 (F12누르시긔) 에 사랑의주석도 달았은^^</h5>
+    </div>
+    <!-- 버팔조로 응원합니다 -->
+    <!-- https://www.google.com/imgres?imgurl=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FFMHiEfcaIAIFw7W.jpg%3Alarge&tbnid=k2ytC0-HKbBZUM&vet=12ahUKEwirqZ-dk72BAxX9hlYBHeNRCisQMyg-egUIARDpAQ..i&imgrefurl=https%3A%2F%2Ftwitter.com%2FItsuki_Amicitia%2Fstatus%2F1495725121096777730&docid=gm1WUYfex6yVTM&w=1289&h=965&q=zoro%20thumbs%20up&ved=2ahUKEwirqZ-dk72BAxX9hlYBHeNRCisQMyg-egUIARDpAQ -->
+
+    <script type="text/javascript">
+        var zoro = document.getElementById("zoro1");
+        zoro.addEventListener('click', function(){
+            document.getElementById("zoroImage").src = "https://i.pinimg.com/736x/cb/87/d8/cb87d84bac4fc0f7d0ead041aa6865b5.jpg"
+            document.getElementById("zoroImage").width = "500"
+            document.getElementById("zoroImage").height = "400"
+
+            document.getElementById("zoroMessage").removeAttribute("hidden")
+
+            document.getElementById("nextButton").removeAttribute("hidden")
+        })
+        
+        var real = document.getElementById("nextButton");
+        real.addEventListener('click', function(){
+            document.getElementById("realCheerMessage").removeAttribute("hidden")
+        })
+
+    </script>
+ </body>
+</html>
